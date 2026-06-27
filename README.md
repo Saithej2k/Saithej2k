@@ -76,12 +76,6 @@ I like building software where system behavior is visible and testable: storage 
   </tr>
 </table>
 
-## Open-Source Engineering
-
-I avoid claiming upstream PRs before maintainers accept them.
-
-- Currently have upstream PRs in review across Elastic, Grafana, Kubernetes, Nextcloud, Xata, and CP Initiative projects; I will add them here after merge.
-
 ## Contact
 
 For backend, infrastructure, storage, real-time systems, or applied AI roles, reach me at [saithej2k3@gmail.com](mailto:saithej2k3@gmail.com) or connect on [LinkedIn](https://www.linkedin.com/in/saithejsingu/).
