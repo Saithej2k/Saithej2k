@@ -2,7 +2,7 @@
 
 # Saithej Singu
 
-**Software engineer building reliable backend systems, storage and diagnostic tooling, and applied AI workflows.**
+**Software engineer building backend systems, storage/reliability tooling, and applied AI workflows.**
 
 M.S. in Computer and Information Science, University of Florida  
 Based in the U.S. and open to relocation, remote, and hybrid roles
@@ -14,67 +14,52 @@ Based in the U.S. and open to relocation, remote, and hybrid roles
 
 </div>
 
-## Engineering Focus
+## Current Direction
 
-I like building software where system behavior is visible and testable: storage paths with measurable tradeoffs, backend services with clear contracts, diagnostic workflows that recover cleanly from faults, and ML systems that can be evaluated instead of guessed at.
+I like code that makes system behavior easier to reason about: storage paths with measurable tradeoffs, service APIs with sharp contracts, diagnostics that surface failure modes early, and ML systems with evaluation loops instead of hand-waving.
 
-- Backend infrastructure, distributed systems, service APIs, and data pipelines
-- Storage and reliability work with LSM trees, WALs, compaction, buffering, and replayable benchmarks
-- Real-time and industrial software with telemetry, CAN workflows, state machines, and fault handling
-- Applied AI and machine learning for retrieval, recommendation, ranking, and optimization
+`backend` / `storage internals` / `reliability` / `observability` / `developer tooling` / `applied AI`
 
-## Technical Toolkit
+## Recent Upstream PRs
 
-| Area | Tools |
-| --- | --- |
-| Languages | C++, Go, Python, Java, C#, SQL, Bash, TypeScript, JavaScript |
-| Backend and systems | Spring Boot, FastAPI, REST APIs, gRPC, Protocol Buffers, Kafka, PostgreSQL, Redis, RocksDB, OpenSearch |
-| Cloud and observability | AWS, Docker, Kubernetes, Terraform, GitHub Actions, Grafana, OpenTelemetry, metrics, tracing |
-| Storage and reliability | LSM trees, WAL recovery, MVCC, Raft, buffer pools, compaction scheduling, workload simulation |
-| Real-time and industrial | STM32, FreeRTOS, CAN Bus, CANopen, motion control, hardware abstraction, telemetry parsing |
-| Applied AI | PyTorch, semantic search, recommendation systems, neural ranking, CTR prediction, Bayesian optimization |
+Merged:
 
-## Featured Work
+- [`microsoft/pg_durable#276`](https://github.com/microsoft/pg_durable/pull/276) - Render race branches in explain output.
+- [`nextcloud/collectives#2604`](https://github.com/nextcloud/collectives/pull/2604) - Show absolute timestamp on hover.
+- [`nextcloud/collectives#2600`](https://github.com/nextcloud/collectives/pull/2600) - Render search dialog query without escaped quotes.
+- [`cpinitiative/usaco-guide#6326`](https://github.com/cpinitiative/usaco-guide/pull/6326) - Correct Sleeping in Class complexity.
 
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <h3><a href="https://github.com/Saithej2k/rocksdb-compaction-optimizer">Compaction Scheduling Optimizer</a></h3>
-      <p>C++ simulator for studying level-based LSM-tree compaction scheduling under write-heavy workloads.</p>
-      <p>Compares legacy level scoring, pending-flush-aware scoring, and hysteresis to reduce stalled writes and avoid noisy schedule switching.</p>
-      <p><strong>Signals:</strong> C++, storage engines, LSM trees, compaction, deterministic simulation</p>
-    </td>
-    <td width="50%" valign="top">
-      <h3><a href="https://github.com/Saithej2k/distributed-storage-engine">Distributed Storage Engine</a></h3>
-      <p>Replicated key-value storage engine with Raft, WAL-backed LSM trees, MVCC transactions, gRPC APIs, and Rust YCSB benchmarks.</p>
-      <p><strong>Signals:</strong> Go, Raft, LSM, WAL, MVCC, gRPC, benchmark tooling</p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h3><a href="https://github.com/Saithej2k/db-storage-engine">DB Storage Engine</a></h3>
-      <p>C++20 storage engine with an LRU-K buffer pool, concurrent B+ tree, and write-ahead log recovery.</p>
-      <p><strong>Signals:</strong> C++, database internals, concurrency, recovery, buffer management</p>
-    </td>
-    <td width="50%" valign="top">
-      <h3><a href="https://github.com/Saithej2k/equipment-control-diagnostic-simulator">Equipment Control and Diagnostic Simulator</a></h3>
-      <p>End-to-end industrial simulator for STM32-style FreeRTOS device nodes, a C++20 Linux CAN gateway, deterministic CAN fault replay, and a C#/.NET WPF diagnostic workbench.</p>
-      <p><strong>Signals:</strong> C++, FreeRTOS, CAN, CANopen, WPF, fault injection, diagnostic tooling</p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h3><a href="https://github.com/Saithej2k/GenAI-Semantic-Search-Recommendation">GenAI Semantic Search and Recommendation</a></h3>
-      <p>RAG recommender with LLM query expansion, Hugging Face bi-encoder retrieval over FAISS, cross-encoder reranking, and grounded result summaries.</p>
-      <p><strong>Signals:</strong> Python, FastAPI, FAISS, semantic retrieval, reranking, evaluation</p>
-    </td>
-    <td width="50%" valign="top">
-      <h3><a href="https://github.com/Saithej2k/Neural-Ad-Ranking-CTR-Prediction">Neural Ad-Ranking and CTR Prediction</a></h3>
-      <p>CTR prediction system built around a DCN-v2 PyTorch model, deterministic C++ feature hashing, sigmoid calibration, and a production-style gRPC serving API.</p>
-      <p><strong>Signals:</strong> PyTorch, C++, gRPC, Redis, feature hashing, ranking models</p>
-    </td>
-  </tr>
-</table>
+In review:
+
+- [`aws/aws-application-networking-k8s#973`](https://github.com/aws/aws-application-networking-k8s/pull/973) - Expose service network override value in Helm config.
+- [`Shopify/type_toolkit#30`](https://github.com/Shopify/type_toolkit/pull/30) - Reject abstract singleton methods on interfaces.
+- [`elastic/connectors#4109`](https://github.com/elastic/connectors/pull/4109) - Allow CLI group help without config.
+- [`elastic/eui#9762`](https://github.com/elastic/eui/pull/9762) - Add spacing around MDX code blocks.
+- [`grafana/faro-web-sdk#2162`](https://github.com/grafana/faro-web-sdk/pull/2162) - Emit navigation changes after commit.
+- [`FlowFuse/node-red-dashboard#2152`](https://github.com/FlowFuse/node-red-dashboard/pull/2152) - Reload dashboard under HTTP node root.
+- [`jaegertracing/jaeger#8878`](https://github.com/jaegertracing/jaeger/pull/8878) - Update monitor metrics config instructions.
+
+## Build Map
+
+Storage and reliability
+
+[`db-storage-engine`](https://github.com/Saithej2k/db-storage-engine) -> [`distributed-storage-engine`](https://github.com/Saithej2k/distributed-storage-engine) -> [`rocksdb-compaction-optimizer`](https://github.com/Saithej2k/rocksdb-compaction-optimizer)
+
+Industrial diagnostics
+
+[`equipment-control-diagnostic-simulator`](https://github.com/Saithej2k/equipment-control-diagnostic-simulator) -> deterministic CAN fault replay -> WPF diagnostic workbench
+
+Applied AI and ranking
+
+[`GenAI-Semantic-Search-Recommendation`](https://github.com/Saithej2k/GenAI-Semantic-Search-Recommendation) -> semantic retrieval and reranking -> [`Neural-Ad-Ranking-CTR-Prediction`](https://github.com/Saithej2k/Neural-Ad-Ranking-CTR-Prediction)
+
+## Technical Range
+
+- Languages: C++, Go, Python, Java, C#, SQL, Bash, TypeScript, JavaScript
+- Backend: Spring Boot, FastAPI, REST APIs, gRPC, Protocol Buffers, Kafka, PostgreSQL, Redis, OpenSearch
+- Storage and reliability: LSM trees, WAL recovery, MVCC, Raft, buffer pools, compaction scheduling, workload simulation
+- Cloud and observability: AWS, Docker, Kubernetes, Terraform, GitHub Actions, Grafana, OpenTelemetry, metrics, tracing
+- Applied AI: PyTorch, semantic search, recommendation systems, neural ranking, CTR prediction, Bayesian optimization
 
 ## Contact
 
