@@ -20,24 +20,16 @@ I like code that makes system behavior easier to reason about: storage paths wit
 
 `backend` / `storage internals` / `reliability` / `observability` / `developer tooling` / `applied AI`
 
-## Recent Upstream PRs
+## Shipping Notes
 
-Merged:
+I keep a split-brain build loop: one side is original systems work, the other is upstream maintenance in codebases I did not design. The through-line is making behavior easier to inspect, test, and recover from.
 
-- [`microsoft/pg_durable#276`](https://github.com/microsoft/pg_durable/pull/276) - Render race branches in explain output.
-- [`nextcloud/collectives#2604`](https://github.com/nextcloud/collectives/pull/2604) - Show absolute timestamp on hover.
-- [`nextcloud/collectives#2600`](https://github.com/nextcloud/collectives/pull/2600) - Render search dialog query without escaped quotes.
-- [`cpinitiative/usaco-guide#6326`](https://github.com/cpinitiative/usaco-guide/pull/6326) - Correct Sleeping in Class complexity.
+**Featured build:** [`LocalAssist`](https://github.com/Saithej2k/LocalAssist)  
+Say it once. It becomes a plan. LocalAssist is a 100% on-device iOS 26 assistant built with Swift, SwiftUI, App Intents, WidgetKit, and Apple Foundation Models. It focuses on guided generation, tool calling, typed streaming, deterministic fallback, and CI-gated evals.
 
-In review:
+**Upstream pattern:** I contribute where small changes remove ambiguity: clearer Jaeger SPM failure modes, safer Elastic connector CLI help paths, Kubernetes Helm configuration escape hatches, frontend state fixes, docs that match runtime behavior, and tests that pin the edge case rather than the happy path.
 
-- [`aws/aws-application-networking-k8s#973`](https://github.com/aws/aws-application-networking-k8s/pull/973) - Expose service network override value in Helm config.
-- [`Shopify/type_toolkit#30`](https://github.com/Shopify/type_toolkit/pull/30) - Reject abstract singleton methods on interfaces.
-- [`elastic/connectors#4109`](https://github.com/elastic/connectors/pull/4109) - Allow CLI group help without config.
-- [`elastic/eui#9762`](https://github.com/elastic/eui/pull/9762) - Add spacing around MDX code blocks.
-- [`grafana/faro-web-sdk#2162`](https://github.com/grafana/faro-web-sdk/pull/2162) - Emit navigation changes after commit.
-- [`FlowFuse/node-red-dashboard#2152`](https://github.com/FlowFuse/node-red-dashboard/pull/2152) - Reload dashboard under HTTP node root.
-- [`jaegertracing/jaeger#8878`](https://github.com/jaegertracing/jaeger/pull/8878) - Update monitor metrics config instructions.
+**Favorite kind of PR:** the one that makes the next engineer say, "oh, that is what this system does."
 
 ## Build Map
 
@@ -60,7 +52,3 @@ Applied AI and ranking
 - Storage and reliability: LSM trees, WAL recovery, MVCC, Raft, buffer pools, compaction scheduling, workload simulation
 - Cloud and observability: AWS, Docker, Kubernetes, Terraform, GitHub Actions, Grafana, OpenTelemetry, metrics, tracing
 - Applied AI: PyTorch, semantic search, recommendation systems, neural ranking, CTR prediction, Bayesian optimization
-
-## Contact
-
-For backend, infrastructure, storage, real-time systems, or applied AI roles, reach me at [saithej2k3@gmail.com](mailto:saithej2k3@gmail.com) or connect on [LinkedIn](https://www.linkedin.com/in/saithejsingu/).
