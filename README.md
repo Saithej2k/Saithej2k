@@ -2,10 +2,12 @@
 
 # Saithej Singu
 
-**Software engineer building backend systems, storage/reliability tooling, and applied AI workflows.**
+**Software engineer with experience across backend systems, storage/reliability tooling, observability, and applied AI workflows.**
 
-M.S. in Computer and Information Science, University of Florida  
-Based in the U.S. and open to relocation, remote, and hybrid roles
+I build service APIs, storage-heavy systems, diagnostics, and small AI tools where correctness has to survive real inputs.
+
+M.S. in Computer Science, University of Florida  
+Based in the U.S.; open to relocation, remote, and hybrid roles
 
 <p>
   <a href="https://www.linkedin.com/in/saithejsingu/"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-Saithej%20Singu-0A66C2?style=flat-square&logo=linkedin&logoColor=white"></a>
@@ -27,9 +29,14 @@ I keep a split-brain build loop: one side is original systems work, the other is
 **Featured build:** [`LocalAssist`](https://github.com/Saithej2k/LocalAssist)  
 Say it once. It becomes a plan. LocalAssist is a 100% on-device iOS 26 assistant built with Swift, SwiftUI, App Intents, WidgetKit, and Apple Foundation Models. It focuses on guided generation, tool calling, typed streaming, deterministic fallback, and CI-gated evals.
 
-**Upstream pattern:** I contribute where small changes remove ambiguity: clearer Jaeger SPM failure modes, safer Elastic connector CLI help paths, Kubernetes Helm configuration escape hatches, frontend state fixes, docs that match runtime behavior, and tests that pin the edge case rather than the happy path.
+## PR Fingerprints
 
-**Favorite kind of PR:** the one that makes the next engineer say, "oh, that is what this system does."
+Small upstream patches, grouped by what they change:
+
+`runtime truth` -> clearer Jaeger SPM disabled-metrics behavior: [`jaeger#8878`](https://github.com/jaegertracing/jaeger/pull/8878)  
+`operator escape hatch` -> Helm service-network override for AWS application networking: [`aws#973`](https://github.com/aws/aws-application-networking-k8s/pull/973)  
+`CLI ergonomics` -> help output that works without local config: [`elastic/connectors#4109`](https://github.com/elastic/connectors/pull/4109)  
+`UI edge polish` -> timestamp/search/rendering fixes in production apps: [`nextcloud#2604`](https://github.com/nextcloud/collectives/pull/2604), [`FlowFuse#2152`](https://github.com/FlowFuse/node-red-dashboard/pull/2152)
 
 ## Build Map
 
